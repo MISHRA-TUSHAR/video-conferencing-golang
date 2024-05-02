@@ -24,10 +24,10 @@ func Run() error {
 	flag.Parse()
 
 	if *addr == ":" {
-		*addr = ":8080"
+		*addr = ":8000"
 	}
 
-	engine := html.New("./views", ".html")
+	engine := html.New("D:/Go/Go_Projects/video/views", ".html")
 	app := fiber.New(fiber.Config{Views: engine})
 	app.Use(logger.New())
 	app.Use(cors.New())
