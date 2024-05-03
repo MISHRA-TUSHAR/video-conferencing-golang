@@ -32,7 +32,9 @@ go run main.go
 
 
 
-By default, the server runs on port 8000. You can specify a different port using the -addr flag. For example:
+By default, the server runs on port 8000. You can specify a different port using the -addr flag.
+
+For example:
 
 ```
 go run main.go -addr :9000
